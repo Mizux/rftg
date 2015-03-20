@@ -23,9 +23,7 @@
 /*
  * Standard headers.
  */
-#ifdef HAVE_CONFIG_H
 #include "config.h"
-#endif
 
 #ifndef VERSION
 #define VERSION "0.9.4"

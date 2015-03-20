@@ -20,8 +20,9 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-#include "rftg.h"
-#include "net.h"
+#include <rftg.h>
+#include <net.h>
+#include <math.h>
 
 /* #define DEBUG */
 

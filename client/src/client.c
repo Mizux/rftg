@@ -21,9 +21,9 @@
  */
 
 #include <gtk/gtk.h>
-#include "rftg.h"
-#include "comm.h"
-#include "client.h"
+#include <rftg.h>
+#include <comm.h>
+#include <client.h>
 
 /*
  * File descriptor of connection to server.
