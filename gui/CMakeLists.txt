@@ -7,4 +7,3 @@ file(GLOB_RECURSE _SRCS src *.c)
 
 add_executable(gui ${_SRCS})
 target_link_libraries(gui ${GTK2_LIBRARIES} rftg client comm)
-
