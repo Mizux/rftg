@@ -1,26 +1,28 @@
+[![Build Status](https://drone.io/github.com/Mizux/rftg/status.png)](https://drone.io/github.com/Mizux/rftg/latest)
+
 This is a program to play Race for the Galaxy against AI players.  Rules
 for the game and expansions can be found at:
 
-http://riograndegames.com/getFile.php?id=273
-http://riograndegames.com/getFile.php?id=293
-http://riograndegames.com/getFile.php?id=393
-http://riograndegames.com/getFile.php?id=506
-http://riograndegames.com/getFile.php?id=1813
-
+http://riograndegames.com/getFile.php?id=273  
+http://riograndegames.com/getFile.php?id=293  
+http://riograndegames.com/getFile.php?id=393  
+http://riograndegames.com/getFile.php?id=506  
+http://riograndegames.com/getFile.php?id=1813  
 
 AUTHORS
-
+=======
 This program was created by Keldon Jones <keldon@keldon.net>.  Many
 useful improvements, especially to the GUI, were made by B. Nordli
 <BGG user borgemik>.
 
 COMPILATION
-
-A simple "./configure && make && make install" should suffice.  You
-may need to install any development packages for libgtk.
+===========
+	mkdir build && cd build
+	cmake ..
+	make
 
 RUNNING
-
+=======
 Run with "./rftg".  You may specify number of players, expansion level,
 etc with some command line options:
 
@@ -42,7 +44,7 @@ You may also change these setting once the game is running with the
 "Select Parameters" option under the Game menu.
 
 INTERFACE
-
+=========
 Cards in your hand are displayed across the bottom of the window.  Your
 active cards are just above, in the blue-shaded area.  Your opponents
 active cards will be displayed in the top colored areas.
@@ -63,7 +65,7 @@ You can right-click a card to select all other cards (for example, when
 Exploring).
 
 KEYBOARD SHORTCUTS
-
+==================
         F1:            Explore: +5
         Shift+F1:      Explore: +1, +1
         F2:            Develop
@@ -85,16 +87,15 @@ KEYBOARD SHORTCUTS
         Shift+Up/Down: Change selection in drop down
         F12:           Open selection drop down
 
-
 BUGS
-
+====
 If you encounter a bug, especially an error in the rules implementation,
 please report it to keldon@keldon.net .
 
 LEGAL
-
+=====
 The source code is copyrighted and is placed under the GPL.  For details,
-see the file COPYING.
+see the file LICENSE.
 
 The original game of Race for the Galaxy was designed by Tom Lehmann and
 published by Rio Grande Games.  Permission to distribute the card and
