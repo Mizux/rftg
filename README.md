@@ -23,7 +23,7 @@ COMPILATION
 
 RUNNING
 =======
-Run with "./rftg".  You may specify number of players, expansion level,
+Run with "cd asset; ../build/gui/gui". You may specify number of players, expansion level,
 etc with some command line options:
 
 	-n <name>      -- Set the name of the human player
