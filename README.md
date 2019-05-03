@@ -15,6 +15,9 @@ useful improvements, especially to the GUI, were made by B. Nordli
 <BGG user borgemik>.
 
 # Dependencies
+* CMAKE >= 2.8
+* MYSQL
+* GTK2
 
 # Compilation
 ```sh
