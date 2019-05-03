@@ -1,4 +1,4 @@
-[![Build Status](https://drone.io/github.com/Mizux/rftg/status.png)](https://drone.io/github.com/Mizux/rftg/latest)
+[![Build Status](https://travis-ci.com/Mizux/rftg.svg?branch=master)](https://travis-ci.com/Mizux/rftg)
 
 This is a program to play Race for the Galaxy against AI players.  Rules
 for the game and expansions can be found at:
@@ -9,42 +9,41 @@ http://riograndegames.com/getFile.php?id=393
 http://riograndegames.com/getFile.php?id=506  
 http://riograndegames.com/getFile.php?id=1813  
 
-AUTHORS
-=======
+# AUTHORS
 This program was created by Keldon Jones <keldon@keldon.net>.  Many
 useful improvements, especially to the GUI, were made by B. Nordli
 <BGG user borgemik>.
 
-COMPILATION
-===========
-	mkdir build && cd build
-	cmake ..
-	make
+# Dependencies
 
-RUNNING
-=======
-Run with "cd asset; ../build/gui/gui". You may specify number of players, expansion level,
-etc with some command line options:
+# Compilation
+```sh
+cmake -S. -Bbuild
+cmake --build build
+```
 
-	-n <name>      -- Set the name of the human player
-	-s <savegame>  -- Load a savegame when starting the program
-	-r <num>       -- A seed to pick when initializing the random pool
-	-p <num>       -- Number of players (including yourself)
-	-a             -- Play a two-player advanced game
-	-e <expansion> -- Expansion level to play:
-				0: Base game only
-				1: The Gathering Storm
-				2: Rebel vs Imperium
-				3: The Brink of War
-				4: Alien Artifacts
-	-g, -nog       -- Enable or disable goals
-	-t, -not       -- Enable or disable takeovers
-
+# Running
+Run with `cd asset; ../build/gui/gui`.  
+You may specify number of players, expansion level, etc with some command line options:
+```
+-n <name>      -- Set the name of the human player
+-s <savegame>  -- Load a savegame when starting the program
+-r <num>       -- A seed to pick when initializing the random pool
+-p <num>       -- Number of players (including yourself)
+-a             -- Play a two-player advanced game
+-e <expansion> -- Expansion level to play:
+			0: Base game only
+			1: The Gathering Storm
+			2: Rebel vs Imperium
+			3: The Brink of War
+			4: Alien Artifacts
+-g, -nog       -- Enable or disable goals
+-t, -not       -- Enable or disable takeovers
+```
 You may also change these setting once the game is running with the
-"Select Parameters" option under the Game menu.
+*Select Parameters* option under the Game menu.
 
-INTERFACE
-=========
+# Interface
 Cards in your hand are displayed across the bottom of the window.  Your
 active cards are just above, in the blue-shaded area.  Your opponents
 active cards will be displayed in the top colored areas.
@@ -64,8 +63,7 @@ selection is not legal.
 You can right-click a card to select all other cards (for example, when
 Exploring).
 
-KEYBOARD SHORTCUTS
-==================
+# Keyboard Shortcuts
         F1:            Explore: +5
         Shift+F1:      Explore: +1, +1
         F2:            Develop
@@ -87,13 +85,11 @@ KEYBOARD SHORTCUTS
         Shift+Up/Down: Change selection in drop down
         F12:           Open selection drop down
 
-BUGS
-====
+# Bugs
 If you encounter a bug, especially an error in the rules implementation,
 please report it to keldon@keldon.net .
 
-LEGAL
-=====
+# Legal
 The source code is copyrighted and is placed under the GPL.  For details,
 see the file LICENSE.
 
