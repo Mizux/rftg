@@ -9,7 +9,7 @@ http://riograndegames.com/getFile.php?id=393
 http://riograndegames.com/getFile.php?id=506  
 http://riograndegames.com/getFile.php?id=1813  
 
-# AUTHORS
+# Authors
 This program was created by Keldon Jones <keldon@keldon.net>.  Many
 useful improvements, especially to the GUI, were made by B. Nordli
 <BGG user borgemik>.
