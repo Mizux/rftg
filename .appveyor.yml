@@ -21,11 +21,11 @@ matrix:
 
 before_build:
   - cmake --version
-  - cmake -S. -Bbuild -G "%CMAKE_GENERATOR%"
+  - cmake -S. -Bbuild -G "%CMAKE_GENERATOR%" -DCMAKE_BUILD_TYPE=%configuration%
 
 build_script:
-  - cmake --build build --target ALL_BUILD -- %MSBUILD_FLAGS%
+  - cmake --build build --config %configuration% --target ALL_BUILD -- %MSBUILD_FLAGS%
 
 test_script:
-  - cmake --build build --target RUN_TESTS -- %MSBUILD_FLAGS%
+  - cmake --build build --config %configuration% --target RUN_TESTS -- %MSBUILD_FLAGS%
 
