@@ -1,0 +1,26 @@
+language: cpp
+cache:
+  ccache: true
+
+jobs:
+  include:
+    - os: linux
+      dist: bionic
+      compiler: clang
+    - os: linux
+      dist: bionic
+      compiler: gcc
+    - os: osx
+      compiler: clang
+    - os: osx
+      compiler: gcc
+
+install:
+  # See https://docs.travis-ci.com/user/caching/#ccache-on-macos
+  - if [ $TRAVIS_OS_NAME == osx ]; then brew install ccache; export PATH="/usr/local/opt/ccache/libexec:$PATH"; fi
+
+script:
+  - cmake --version
+  - cmake -H. -Bbuild
+  - cmake --build build --target all
+  - cmake --build build --target test
