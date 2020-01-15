@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.com/Mizux/rftg.svg?branch=master)](https://travis-ci.com/Mizux/rftg)
+[![Build status](https://ci.appveyor.com/api/projects/status/n5vahx41ffgh5nn2/branch/master?svg=true)](https://ci.appveyor.com/project/Mizux/rftg/branch/master)
 
 This is a program to play Race for the Galaxy against AI players.  Rules
 for the game and expansions can be found at:
