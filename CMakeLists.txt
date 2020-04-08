@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.12)
+cmake_minimum_required(VERSION 3.14)
 project(RFTGGame VERSION 1.0 LANGUAGES CXX C)
 
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/cmake/Modules/")
@@ -48,6 +48,15 @@ if(BUILD_TESTING)
   #  GIT_REPOSITORY https://github.com/google/googletest.git
   #  GIT_TAG release-1.10.0)
   #set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
+  #FetchContent_MakeAvailable(googletest)
+  FetchContent_Declare(
+    Catch2
+    GIT_REPOSITORY https://github.com/catchorg/Catch2.git
+    GIT_TAG master
+    GIT_SHALLOW TRUE
+    GIT_PROGRESS TRUE
+    )
+  FetchContent_MakeAvailable(Catch2)
 endif()
 
 # LIBRARIES
