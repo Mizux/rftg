@@ -1,5 +1,6 @@
-[![Build Status](https://travis-ci.com/Mizux/rftg.svg?branch=master)](https://travis-ci.com/Mizux/rftg)
-[![Build status](https://ci.appveyor.com/api/projects/status/n5vahx41ffgh5nn2/branch/master?svg=true)](https://ci.appveyor.com/project/Mizux/rftg/branch/master)
+[![Linux](https://github.com/Mizux/rftg/actions/workflows/linux.yml/badge.svg)](https://github.com/Mizux/rftg/actions/workflows/linux.yml)
+[![Linux](https://github.com/Mizux/rftg/actions/workflows/macos.yml/badge.svg)](https://github.com/Mizux/rftg/actions/workflows/macos.yml)
+[![Linux](https://github.com/Mizux/rftg/actions/workflows/windows.yml/badge.svg)](https://github.com/Mizux/rftg/actions/workflows/windows.yml)
 
 This is a program to play Race for the Galaxy against AI players.  Rules
 for the game and expansions can be found at:
@@ -9,24 +10,26 @@ http://riograndegames.com/getFile.php?id=293
 http://riograndegames.com/getFile.php?id=393  
 http://riograndegames.com/getFile.php?id=506  
 http://riograndegames.com/getFile.php?id=1813  
+# Introduction
+This is a program to play Race for the Galaxy against AI players.
 
-# Authors
-This program was created by Keldon Jones <keldon@keldon.net>.  Many
-useful improvements, especially to the GUI, were made by B. Nordli
-<BGG user borgemik>.
+## Authors
+This program was created by Keldon Jones <keldon@keldon.net>.
+Many useful improvements, especially to the GUI, were made by B. Nordli.
 
-# Dependencies
-* CMAKE >= 2.8
+## Dependencies
+* CMAKE >= 2.LICENSE8
 * MYSQL
 * GTK2
 
-# Compilation
+## Compilation
+
 ```sh
 cmake -S. -Bbuild
 cmake --build build
 ```
 
-# Running
+## Running
 Run with `cd asset; ../build/gui/gui`.  
 You may specify number of players, expansion level, etc with some command line options:
 ```
@@ -47,7 +50,7 @@ You may specify number of players, expansion level, etc with some command line o
 You may also change these setting once the game is running with the
 *Select Parameters* option under the Game menu.
 
-# Interface
+## Interface
 Cards in your hand are displayed across the bottom of the window.  Your
 active cards are just above, in the blue-shaded area.  Your opponents
 active cards will be displayed in the top colored areas.
@@ -67,7 +70,7 @@ selection is not legal.
 You can right-click a card to select all other cards (for example, when
 Exploring).
 
-# Keyboard Shortcuts
+## Keyboard Shortcuts
         F1:            Explore: +5
         Shift+F1:      Explore: +1, +1
         F2:            Develop
@@ -89,13 +92,13 @@ Exploring).
         Shift+Up/Down: Change selection in drop down
         F12:           Open selection drop down
 
-# Bugs
+## Bugs
 If you encounter a bug, especially an error in the rules implementation,
 please report it to keldon@keldon.net .
 
-# Legal
+## Legal
 The source code is copyrighted and is placed under the GPL.  For details,
-see the file LICENSE.
+see the file [LICENSE](LICENSE).
 
 The original game of Race for the Galaxy was designed by Tom Lehmann and
 published by Rio Grande Games.  Permission to distribute the card and
