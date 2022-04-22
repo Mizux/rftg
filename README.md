@@ -2,14 +2,7 @@
 [![Linux](https://github.com/Mizux/rftg/actions/workflows/macos.yml/badge.svg)](https://github.com/Mizux/rftg/actions/workflows/macos.yml)
 [![Linux](https://github.com/Mizux/rftg/actions/workflows/windows.yml/badge.svg)](https://github.com/Mizux/rftg/actions/workflows/windows.yml)
 
-This is a program to play Race for the Galaxy against AI players.  Rules
-for the game and expansions can be found at:
 
-http://riograndegames.com/getFile.php?id=273  
-http://riograndegames.com/getFile.php?id=293  
-http://riograndegames.com/getFile.php?id=393  
-http://riograndegames.com/getFile.php?id=506  
-http://riograndegames.com/getFile.php?id=1813  
 # Introduction
 This is a program to play Race for the Galaxy against AI players.
 
