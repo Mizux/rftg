@@ -64,14 +64,21 @@ endif()
 add_subdirectory(net)
 add_subdirectory(rftg)
 add_subdirectory(comm)
-add_subdirectory(client)
+
+find_package(PkgConfig REQUIRED)
+pkg_check_modules(GTK2 gtk+-2.0)
+
+if(GTK2_FOUND)
+  add_subdirectory(client)
+  add_subdirectory(gui)
+endif()
 
 # EXECUTABLES
-add_subdirectory(gui)
 add_subdirectory(server)
 add_subdirectory(ai_client)
 add_subdirectory(learner)
 add_subdirectory(dumpnet)
+add_subdirectory(sdlclient)
 
 # Install
 install(
